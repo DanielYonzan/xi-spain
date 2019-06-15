@@ -1,0 +1,107 @@
+@import "common.css";
+
+body{font-family: "Roboto", sans-serif; color: #555}
+body, .dropdown-item, .form-control{font-size: 14px}
+.navbar-nav .dropdown-menu{width: 160px; box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05); border-color: #e3eaef}
+.fa{margin-right: 4px}
+.dropdown-item{padding: 7px 18px; color: #555}
+h2,h3,label{font-family: 'Rubik', sans-serif; font-weight: 500}
+h3{font-size: 14px; text-transform: uppercase; margin-bottom: 15px}
+.shrink{margin: 0}
+.shrink>div{padding: 0}
+.form-control{border-color: #d9e3e9; padding: .437rem .75rem}
+label{font-weight: 500; color: #444}
+label.form-check-label, label.custom-control-label{font-weight: normal; cursor: pointer; color: #555}
+
+/*login css*/
+.login {width: 340px; margin: 8% auto;}
+.login-body{background: #fff; padding: 30px}
+.login .logo{margin-bottom: 10px}
+
+/*header css*/
+header .navbar{padding: 3px 14px; background: #ffd900}
+header a, header a:hover{color: #fff}
+header .dropdown-menu .fa{color: #777}
+header .user-img{margin-right: 5px}
+.navbar-brand{font-size: 14px}
+.navbar-brand img, .logo img{width: auto;}
+
+/*sidebar css*/
+.sidebar{width:230px; position: fixed; left: 0; top: 51px; height: 100%; background: #fff; z-index: 5; overflow-y:auto}
+.sidebar .navbar{padding: 7px 0;}
+.sidebar .navbar-nav{width: 100%}
+.sidebar .navbar .nav-link{padding: 12px 20px; color: #555; font-size: 15px}
+.sidebar .fa{font-size: 15px; margin-right: 8px}
+.sidebar .navbar .tree.open >a, .sidebar .navbar .tree:hover>a, .sidebar .navbar a:hover, .sidebar .navbar a.active, .sidebar .navbar li.active .nav-link{color: #02c0ce}
+.sidebar .tree>a{position: relative;}
+.sidebar .tree>a:after{font: normal normal normal 14px/1 FontAwesome; content: "\f105"; font-weight: 900; position: absolute; right: 20px; top: 17px}
+.sidebar .tree.open>a:after{content: "\f107"}
+.sidebar .tree ul{list-style: none; padding: 0; transition: height ease-in-out .5s; display: none;}
+.sidebar .tree ul a{display: block; padding: 5px 20px 5px 45px; color: #555; text-decoration: none;}
+.sidebar-toggler{display: none;}
+
+/*content css*/
+.content {margin: 71px 15px 0;}
+.content-header h2{font-size: 18px;}
+.breadcrumb{background: none; padding: 0;}
+.breadcrumb li, .breadcrumb a{color: #aaa; font-size: 13px;}
+.breadcrumb-item+.breadcrumb-item::before{font-family: Font Awesome\ 5 Free; content: "\f105"; font-weight: 900; color: #aaa}
+.page{padding: 20px; background: #fff; margin-bottom: 30px}
+
+/*dashboard css*/
+.navbar-brand{filter:brightness(0) invert(1)}
+.overview a{display: block; text-decoration: none; color: #fff}
+.overview .card-body{padding: 20px 5px}
+.overview .col-9{border-left: 2px solid #ffffff38}
+.overview .card .fa{font-size: 25px;}
+.overview .count strong{font-size: 18px}
+
+/*select2 modifications*/
+.select2-container--default .select2-selection--multiple,.select2-container--default.select2-container--focus .select2-selection--multiple{
+	border-color: #d9e3e9;
+}
+.select2-container--default .select2-selection--multiple, .select2-container--default.select2-container--focus .select2-selection--multiple{
+	padding: 2px 7px;
+}
+
+/*footer css*/
+footer{margin: 0 15px; padding: 10px 0; border-top: 1px solid #e5e5e5; color: #aaa}
+
+/*responsive css*/
+@media(max-width: 767px){
+	.sidebar-toggler{margin-right: 5px; color: #fff; background: none; border: 1px solid #2d92ff; display: block;}
+	.sidebar-toggler .fa{margin: 0;}
+	.sidebar{left: -230px; transition: ease-in-out .3s; box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.05);}
+	.sidebar.visible{left: 0}
+	.page{padding: 0; margin-bottom: 15px}
+}
+
+@media(min-width: 768px){
+	body{background: #f3f6f8}
+	.content{margin: 71px 30px 0 260px;}
+	footer{margin: 0 0 0 260px}
+}
+
+.sidebar{padding-bottom: 70px}
+tr.bg-light-yellow{background: #ffec7d}
+/* SCROLLBAR */
+/* Let's get this party started */
+.sidebar::-webkit-scrollbar {
+	width: 4px;
+}
+
+/* Handle */
+.sidebar::-webkit-scrollbar-thumb {
+	background: #eee;
+	border: #eee;
+}
+
+#size-error{display: none !important;}
+#unit-error{
+	position:absolute;
+	top: calc(100% - 19px);
+	left: 0;
+}
+
+input[name='size'],select[name='unit']{max-height: 38px !important;}
+input[name='size'].error,select[name='unit'].error{margin-bottom: 19px; height: 38px;}

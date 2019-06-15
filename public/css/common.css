@@ -1,0 +1,18 @@
+div.error{color:#c00; font-size:13px;}
+.form-control.error{border-color: #e89494}
+.shrinked-row{margin: 0 -5px}
+.shrinked-row>div{padding: 0 5px}
+
+/*image input preview css*/
+.input-container{position: relative}
+.imgTarget{border:2px solid #81368a;}
+.upload-text{position: absolute; left:calc(50% - 50px); top:calc(50% - 11px); color: #fff; background: #000000ab; padding:  0 5px}
+.imgInput{position: absolute; top:0; left:0; width: 100%; height: 100%; background: none; opacity: 0; cursor: pointer}
+.imgInput:focus{background: none}
+.addimage-container img{border:2px solid #81368a; cursor: pointer   }
+.form-check-images .form-check-input{tposition: absolute; top: 5px; left: calc(50% - 6px); margin: 5px 0}
+
+#categoryImages label{border:2px solid #fff;}
+#categoryImages input[type="radio"]:checked+label {
+    border-color: #f00;
+}
